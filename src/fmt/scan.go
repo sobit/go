@@ -1138,7 +1138,7 @@ func (s *ss) advance(format string) (i int) {
 }
 
 // doScanf does the real work when scanning with a format string.
-//  At the moment, it handles only pointers to basic types.
+// At the moment, it handles only pointers to basic types.
 func (s *ss) doScanf(format string, a []interface{}) (numProcessed int, err error) {
 	defer errorHandler(&err)
 	end := len(format) - 1
